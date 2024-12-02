@@ -1,0 +1,58 @@
+[
+  {
+    "id": "f65ad411-59a8-421e-b44b-eec676e5e748",
+    "name": "Tung",
+    "raw_proxy": null,
+    "profile_path": "MZt48Dwo52-08092024",
+    "browser_type": "Chrome",
+    "browser_version": "124.0.6367.29",
+    "note": null,
+    "group_id": 1,
+    "created_at": "2024-09-08T08:22:39"
+  },
+  {
+    "id": "49635f99-61ec-47a6-9daf-c7c0b1b6ac96",
+    "name": "HĂ",
+    "raw_proxy": null,
+    "profile_path": "p7jNRG4UbC-08092024",
+    "browser_type": "Chrome",
+    "browser_version": "124.0.6367.29",
+    "note": null,
+    "group_id": 1,
+    "created_at": "2024-09-08T08:18:14"
+  },
+  {
+    "id": "e78d47f9-fa7a-4836-bcfa-4d39876775e8",
+    "name": "Ă”ng",
+    "raw_proxy": null,
+    "profile_path": "KHNcn7BdeP-07092024",
+    "browser_type": "Chrome",
+    "browser_version": "124.0.6367.29",
+    "note": null,
+    "group_id": 1,
+    "created_at": "2024-09-07T09:28:48"
+  },
+  {
+    "id": "74a553c3-3ba7-48a2-86f8-30ae61959934",
+    "name": "Dung",
+    "raw_proxy": null,
+    "profile_path": "Z9ouVodJbO-07092024",
+    "browser_type": "Chrome",
+    "browser_version": "124.0.6367.29",
+    "note": null,
+    "group_id": 1,
+    "created_at": "2024-09-07T09:18:42"
+  },
+  {
+    "id": "19e6c919-da73-4ea0-8d41-01bf9fff6262",
+    "name": "BĂ",
+    "raw_proxy": null,
+    "profile_path": "TkzVJNhCCZ-02092024",
+    "browser_type": "Chrome",
+    "browser_version": "124.0.6367.29",
+    "note": null,
+    "group_id": 1,
+    "created_at": "2024-09-02T01:25:08"
+  }
+      
+    ]
