@@ -1,11 +1,14 @@
-const { chromium } = require('playwright-core');
-const fs = require('fs');
-const fsPromises = fs.promises;
-const path = require('path');
-const axios = require('axios');
-const readline = require('readline');
-const sharp = require('sharp');
-const axiosRetry = require('axios-retry').default;
+import { chromium } from 'playwright-core';
+import fs from 'fs';
+import fsPromises from 'fs/promises';
+import path from 'path';
+import axios from 'axios';
+import readline from 'readline';
+import sharp from 'sharp';
+import axiosRetry from 'axios-retry';
+import { Mutex } from 'async-mutex';
+import { fileURLToPath } from 'url';
+import pLimit from 'p-limit';
 
 let globalImageAnalysis = null;
 const parseAuthorization = (authorization) => {
@@ -39,18 +42,13 @@ const colors = {
     error: '\x1b[31m',
     paint: '\x1b[35m'
 };
-
-function getTimestampGMT7() {
-    return new Date().toLocaleString('en-US', { timeZone: 'Asia/Bangkok' });
-}
-
 function logMessage(type, message, userName = '') {
-    const timestamp = getTimestampGMT7();
+    const timestamp = new Date().toLocaleString('en-GB', { timeZone: 'Asia/Bangkok', hour12: false });
     const color = colors[type] || colors.reset;
     const coloredType = `${color}[${type.toUpperCase()}]${colors.reset}`;
     const logText = userName 
-        ? `[${timestamp}] ${coloredType} [${userName}] ${message}`
-        : `[${timestamp}] ${coloredType} ${message}`;
+        ? `[${timestamp}] - {@Notpixel} - ${coloredType} ${userName} | ${message}`
+        : `[${timestamp}] - {@Notpixel} - ${coloredType} ${message}`;
     console.log(logText);
 }
 function readProfiles() {
@@ -71,7 +69,7 @@ function readProfiles() {
             };
         });
     } catch (error) {
-        logMessage('error', `Đã xảy ra l ôi khi đọc profile.json: ${error.message}`);
+        logMessage('error', `Đã xảy ra lỗi khi đọc profile.json: ${error.message}`);
         return [];
     }
 }
@@ -94,7 +92,7 @@ const createHeaders = authorization => ({
   'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
   'Authorization': `initData ${authorization}`
 });
-async function saveUserData(authorizationData, name) {
+export async function saveUserData(authorizationData, name) {
     let profiles = [];
     if (fs.existsSync('userdata.json')) {
         try {
@@ -122,7 +120,7 @@ async function saveUserData(authorizationData, name) {
     }
 }
 
-async function executeWithAuthorization(profile, fn) {
+export async function executeWithAuthorization(profile, fn) {
     let authorization = await getAuthorizationForProfile(profile.name);
     if (!authorization) {
         logMessage('info', `Không tìm thấy Authorization cho ${profile.name}, khởi động trình duyệt để lấy mới.`);
@@ -298,7 +296,6 @@ function getAuthorizationForProfile(name) {
         const profiles = JSON.parse(fileData);
         const profile = profiles.find(p => p.name === name);
         if (profile) {
-            logMessage('info', `Authorization cho ${name} đã được tìm thấy.`);
             return profile.authorization;
         } else {
             logMessage('warning', `Không tìm thấy Authorization cho ${name} trong userdata.json.`);
@@ -330,19 +327,17 @@ async function makeApiRequest(endpoint, method, authorization, userName, profile
     let currentAuthorization = authorization;
 
     try {
-        const userData = await makeApiRequest(endpoint, 'GET', currentAuthorization, `Account ${index + 1}`, profile);
+        const userData = await makeApiRequest(endpoint, 'GET', currentAuthorization, `Account ${index}`, profile);
 
         if (userData) {
-            const userName = `${userData.lastName} ${userData.firstName}`;
-            logMessage('info', `Tài Khoản ${index + 1}: ${userName}`, userName);
             return { userData, authorization: currentAuthorization };
         } else {
-            logMessage('warning', `Không nhận được dữ liệu người dùng cho tài khoản ${index + 1}`, `Account ${index + 1}`);
+            logMessage('warning', `Không nhận được dữ liệu người dùng cho tài khoản ${index}`, `Account ${index}`);
             return { userData: null, authorization: null };
         }
     } catch (error) {
         if (error.response && error.response.status === 401) {
-            logMessage('info', `Authorization không hợp lệ cho account ${index + 1}, đang làm mới...`, profile.name);
+            logMessage('info', `Authorization không hợp lệ cho account ${index}, đang làm mới...`);
             await launchBrowserAndClickStart(profile);
             currentAuthorization = await getAuthorizationForProfile(profile.name);
             if (currentAuthorization) {
@@ -483,7 +478,6 @@ function colorDifference(color1, color2) {
 
     return Math.abs(r1 - r2) + Math.abs(g1 - g2) + Math.abs(b1 - b2);
 }
-const { Mutex } = require('async-mutex');
 function resetRepaintedPixels() {
     globalRepaintedPixels = {};
     if (fs.existsSync(repaintedPixelsPath)) {
@@ -493,6 +487,8 @@ function resetRepaintedPixels() {
     logMessage('info', 'Đã reset danh sách pixel đã repaint.');
 }
 // Đường dẫn đến file JSON lưu trữ pixelId đã repaint
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const repaintedPixelsPath = path.join(__dirname, 'repainted_pixels.json');
 
 // Mutex để đồng bộ hóa ghi file
@@ -521,10 +517,8 @@ async function repaintPixel(pixelId, newColor, currentAuthorization) {
     return response.data.balance;
 }
 async function attemptRepaint(pixelId, newColor, userName, currentAuthorization) {
-    // Kiểm tra xem pixelId đã được repaint chưa
     if (globalRepaintedPixels[pixelId]) {
-
-        return null; // Không cần thực hiện repaint
+        return null;
     }
 
     logMessage('paint', `Đang repaint pixel: ${pixelId} với màu: ${newColor}`, userName);
@@ -533,10 +527,8 @@ async function attemptRepaint(pixelId, newColor, userName, currentAuthorization)
         const diem = await repaintPixel(pixelId, newColor, currentAuthorization);
         logMessage('paint', `Pixel ${pixelId} repaint thành công, Tổng điểm: ${diem}`, userName);
         
-        // Cập nhật pixel đã repaint
         globalRepaintedPixels[pixelId] = true;
 
-        // Ghi lại pixelId đã repaint vào file ngay lập tức
         const release = await mutex.acquire();
         try {
             await saveRepaintedPixels(globalRepaintedPixels);
@@ -544,12 +536,11 @@ async function attemptRepaint(pixelId, newColor, userName, currentAuthorization)
             release();
         }
 
-        return diem; // Trả lại điểm tổng
+        return diem;
     } catch (error) {
         const errorData = error.response?.data || error.message;
         logMessage('error', `Lỗi repaint tại pixel ${pixelId}: ${errorData}`, userName);
 
-        // Kiểm tra lỗi 401 Unauthorized và cập nhật Authorization
         if (error.response && error.response.status === 401) {
             logMessage('info', `Authorization không hợp lệ, làm mới Authorization cho ${profile.name}...`);
             await launchBrowserAndClickStart(profile);
@@ -557,12 +548,12 @@ async function attemptRepaint(pixelId, newColor, userName, currentAuthorization)
 
             if (currentAuthorization) {
                 logMessage('info', `Đã làm mới Authorization, thử lại repaint pixel ${pixelId}...`);
-                return await attemptRepaint(pixelId, newColor, userName, currentAuthorization); // Thử lại với Authorization mới
+                return await attemptRepaint(pixelId, newColor, userName, currentAuthorization);
             } else {
                 logMessage('error', `Không thể lấy Authorization mới cho profile ${profile.name}.`);
             }
         }
-        return null; // Không thành công
+        return null;
     }
 }
 async function startRepaint(authorization, userName, index, charges, profile) {
@@ -595,7 +586,7 @@ async function startRepaint(authorization, userName, index, charges, profile) {
         return;
     }
 
-    logMessage('info', `Bắt đầu phân tích ảnh cho tài khoản ${index + 1}`, userName);
+    logMessage('info', `Bắt đầu phân tích ảnh cho tài khoản ${index}`, userName);
     const imageColors = await analyzeImage(imagePath);
     
     if (!imageColors) {
@@ -603,7 +594,7 @@ async function startRepaint(authorization, userName, index, charges, profile) {
         return;
     }
 
-    logMessage('info', `Phân tích ảnh hoàn tất cho tài khoản ${index + 1}`, userName);
+    logMessage('info', `Phân tích ảnh hoàn tất cho tài khoản ${index}`, userName);
 
     if (imageColors.length !== size * size) {
         logMessage('error', `Kích thước ảnh không phù hợp. Cần ${size * size} pixels, nhưng ảnh có ${imageColors.length} pixels.`, userName);
@@ -628,7 +619,7 @@ async function startRepaint(authorization, userName, index, charges, profile) {
         let pixelsToRepaint = unrepaintedPixels.slice(0, charges);
         pixelsToRepaint = shuffleArray(pixelsToRepaint);
 
-        logMessage('info', `Đang repaint ${pixelsToRepaint.length} pixels cho tài khoản ${index + 1}.`, userName);
+        logMessage('info', `Đang repaint ${pixelsToRepaint.length} pixels cho tài khoản ${index}.`, userName);
 
         for (const { pixelId, newColor } of pixelsToRepaint) {
             const success = await attemptRepaint(pixelId, newColor, userName, authorization);
@@ -645,7 +636,7 @@ async function startRepaint(authorization, userName, index, charges, profile) {
         }
     }
 
-    logMessage('info', `Hoàn thành repaint cho tài khoản ${index + 1}.`, userName);
+    logMessage('info', `Hoàn thành repaint cho tài khoản ${index}.`, userName);
     
     try {
         const updatedTemplate = await fetchTemplate(currentAuthorization);
@@ -695,12 +686,12 @@ function readColorsFromFile() {
 async function claimRewards(authorization, userName, index, profile) {
     const endpoint = '/mining/claim';
     const data = await makeApiRequest(endpoint, 'GET', authorization, userName, profile);
-    logMessage('success', `Tài Khoản ${index + 1} đã claim thành công: ${data.claimed}`, userName);
+    logMessage('success', `Tài Khoản đã claim thành công: ${data.claimed}`, 'Account ' + index);
   }
 async function getMiningStatus(authorization, userName, index, profile) {
     const endpoint = '/mining/status';
     const data = await makeApiRequest(endpoint, 'GET', authorization, userName, profile);
-    logMessage('info', `User Balance: ${data.userBalance}, Lượt tô màu: ${data.charges}`, userName);
+    logMessage('info', `User Balance: ${data.userBalance}, Lượt tô màu: ${data.charges}`, 'Account ' + index);
     return data;
   }
   async function checkAndClaimTasks(authorization, userName, index, profile) {
@@ -730,10 +721,10 @@ async function getMiningStatus(authorization, userName, index, profile) {
                 await claimMissingTask(authorization, missingTask, userName, index, checkTasks, profile);
             }
         } else {
-            logMessage('info', `Tài Khoản ${index + 1}: Tất cả nhiệm vụ đã được hoàn thành.`, userName);
+            logMessage('info', `Tất cả nhiệm vụ đã được hoàn thành.`, 'Account ' + index);
         }
     } catch (error) {
-        logMessage('error', `Lỗi khi kiểm tra và yêu cầu nhiệm vụ cho tài khoản ${index + 1}: ${error.message}`, userName);
+        logMessage('error', `Lỗi khi kiểm tra và yêu cầu nhiệm vụ cho tài khoản ${index}: ${error.message}`, 'Account ' + index);
     }
 }
 
@@ -747,9 +738,9 @@ async function claimMissingTask(authorization, taskKey, userName, index, checkTa
     const endpoint = `/mining/task/check/${taskToClaim}`;
     try {
         await makeApiRequest(endpoint, 'GET', authorization, userName, profile);
-        logMessage('success', `Nhiệm vụ ${taskKey} đã được yêu cầu thành công cho tài khoản ${index + 1}.`, userName);
+        logMessage('success', `Nhiệm vụ ${taskKey} đã được yêu cầu thành công cho tài khoản ${index}.`, userName);
     } catch (error) {
-        logMessage('error', `Lỗi khi yêu cầu nhiệm vụ ${taskKey} cho tài khoản ${index + 1}: ${error.message}`, userName);
+        logMessage('error', `Lỗi khi yêu cầu nhiệm vụ ${taskKey} cho tài khoản ${index}: ${error.message}`, userName);
     }
 }
 
@@ -909,7 +900,7 @@ const watchAds = async (authorization, userName, index, profile) => {
       const advData = advResponse.data;
 
       if (advData && advData.banner && advData.banner.bannerAssets) {
-        logMessage('info', `${userName} | A new advertisement has been found for viewing! | Title: ${advData.banner.bannerAssets[1].value} | Type: ${advData.bannerType}`, index + 1);
+        logMessage('info', `${userName} | A new advertisement has been found for viewing! | Title: ${advData.banner.bannerAssets[1].value} | Type: ${advData.bannerType}`, index);
         
         const previousStatus = await getMiningStatus(authorization, userName, index, profile);
         const previousBalance = previousStatus.userBalance;
@@ -918,21 +909,21 @@ const watchAds = async (authorization, userName, index, profile) => {
         await axios.get(renderUrl, { headers: _headers });
         
         let sleepTime = randomInt(1, 5);
-        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before next action.`, index + 1);
+        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before next action.`, index);
         await countdown(sleepTime);
 
         const showUrl = advData.banner.trackings[1].value;
         await axios.get(showUrl, { headers: _headers });
         
         sleepTime = randomInt(10, 15);
-        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before next action.`, index + 1);
+        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before next action.`, index);
         await countdown(sleepTime);
 
         const rewardUrl = advData.banner.trackings[4].value;
         await axios.get(rewardUrl, { headers: _headers });
         
         sleepTime = randomInt(1, 5);
-        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before updating status.`, index + 1);
+        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before updating status.`, index);
         await countdown(sleepTime);
 
         await updateStatus(authorization, userName, index, profile);
@@ -941,18 +932,18 @@ const watchAds = async (authorization, userName, index, profile) => {
         const currentBalance = currentStatus.userBalance;
 
         const delta = Math.round((currentBalance - previousBalance) * 10) / 10;
-        logMessage('success', `${userName} | Ad view completed successfully. | Reward: ${delta}`, index + 1);
+        logMessage('success', ` Ad view completed successfully. | Reward: ${delta}`, 'Account ' + index);
         
         sleepTime = randomInt(30, 35);
-        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before checking for new ads.`, index + 1);
+        logMessage('info', ` Sleeping for ${sleepTime} seconds before checking for new ads.`, 'Account ' + index);
         await countdown(sleepTime);
       } else {
-        logMessage('info', `${userName} | No ads are available for viewing at the moment.`, index + 1);
+        logMessage('info', ` No ads are available for viewing at the moment.`, 'Account ' + index);
         break;
       }
     }
   } catch (error) {
-    logMessage('error', `Error in watchAds: ${error.message}`, index + 1);
+    logMessage('error', `Error in watchAds: ${error.message}`, index);
   }
 };
 
@@ -974,9 +965,9 @@ const updateStatus = async (authorization, userName, index, profile) => {
     } catch (error) {
       const retryDelay = baseDelay * (attempt + 1);
       if (error.response) {
-        logMessage('warning', `${userName} | Status update attempt ${attempt} failed | Sleep ${retryDelay / 1000} sec | ${error.response.status}, ${error.message}`, index + 1);
+        logMessage('warning', `${userName} | Status update attempt ${attempt} failed | Sleep ${retryDelay / 1000} sec | ${error.response.status}, ${error.message}`, index);
       } else {
-        logMessage('error', `${userName} | Unexpected error when updating status | Sleep ${retryDelay / 1000} sec | ${error.message}`, index + 1);
+        logMessage('error', `${userName} | Unexpected error when updating status | Sleep ${retryDelay / 1000} sec | ${error.message}`, index);
       }
       await sleep(retryDelay); // Chờ trước khi thử lại
     }
@@ -1018,51 +1009,49 @@ const askUserForUpgrade = () => {
     });
   };
   
-  const run = async () => {
-    const wantRepaint = await askUserForUpgrade(); // Hỏi người dùng ngay khi bắt đầu
-  
+  export async function run() {
+    const wantRepaint = await askUserForUpgrade();
+    const limit = pLimit(10);
+
     while (true) {
-      resetRepaintedPixels();
-      try {
-        if (!globalImageAnalysis) {
-          globalImageAnalysis = await analyzeImage('image.png');
-          logMessage('info', 'Đã hoàn thành phân tích ảnh ');
-        }
-        const profiles = readProfiles();
-        const MAX_CONCURRENT_TASKS = 10;
-  
-        const processProfile = async (profile, index) => {
-          try {
-            const { userData, authorization } = await fetchUserData(await getAuthorizationForProfile(profile.name), index, profile);
-            if (userData) {
-              const userName = `${userData.lastName} ${userData.firstName}`;
-              await watchAds(authorization, userName, index, profile);
-              await claimRewards(authorization, userName, index, profile);
-              await checkAndClaimTasks(authorization, userName, index, profile);
-              const miningStatus = await getMiningStatus(authorization, userName, index, profile);
-  
-              if (wantRepaint) {
-                await startRepaint(authorization, userName, index, miningStatus.charges, profile, globalImageAnalysis);
-              } else {
-                logMessage('info', 'Người dùng đã chọn không thực hiện repaint.', index + 1);
-              }
+        resetRepaintedPixels();
+        try {
+            if (!globalImageAnalysis) {
+                globalImageAnalysis = await analyzeImage('image.png');
+                logMessage('info', 'Đã hoàn thành phân tích ảnh ');
             }
-          } catch (error) {
-            logMessage('error', `Đã xảy ra lỗi với tài khoản ${index + 1}: ${error.message}`, profile.name);
-          }
-        };
-  
-        for (let i = 0; i < profiles.length; i += MAX_CONCURRENT_TASKS) {
-          const batch = profiles.slice(i, i + MAX_CONCURRENT_TASKS);
-          await Promise.all(batch.map((profile, batchIndex) => processProfile(profile, i + batchIndex)));
+            const profiles = readProfiles();
+
+            const processProfile = async (profile, index) => {
+                try {
+                    const { userData, authorization } = await fetchUserData(await getAuthorizationForProfile(profile.name), index, profile);
+                    if (userData) {
+                        const userName = `${userData.lastName} ${userData.firstName}`;
+                        await watchAds(authorization, userName, index, profile);
+                        await claimRewards(authorization, userName, index, profile);
+                        await checkAndClaimTasks(authorization, userName, index, profile);
+                        const miningStatus = await getMiningStatus(authorization, userName, index, profile);
+
+                        if (wantRepaint) {
+                            await startRepaint(authorization, userName, index, miningStatus.charges, profile, globalImageAnalysis);
+                        } else {
+                            logMessage('info', 'Người dùng đã chọn không thực hiện repaint.', 'Account ' + index);
+                        }
+                    }
+                } catch (error) {
+                    logMessage('error', `Đã xảy ra lỗi với tài khoản ${index}: ${error.message}`);
+                }
+            };
+            const tasks = profiles.map((profile, index) => limit(() => processProfile(profile, index)));
+            await Promise.all(tasks);
+
+            await countdown(600);
+        } catch (error) {
+            logMessage('error', `Đã xảy ra lỗi toàn cục: ${error.message}`);
+            return;
         }
-        await countdown(600);
-      } catch (error) {
-        logMessage('error', `Đã xảy ra lỗi toàn cục: ${error.message}`);
-        return;
-      }
     }
-  };
+}
 
 run().catch(error => {
     logMessage('error', `Đã xảy ra lỗi toàn cục: ${error.message}`);
