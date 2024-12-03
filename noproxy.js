@@ -314,22 +314,34 @@ function readAllowedColors() {
         return [];
     }
 }
-async function fetchTemplate(authorization,index, profile, isMyTemplate = true) {
+async function fetchTemplate(authorization, index, profile, isMyTemplate = true) {
     const endpoint = isMyTemplate ? '/tournament/template/subscribe/my' : '/tournament/template/638403324'; // Thay đổi endpoint
     try {
-        const templateData = await makeApiRequest(endpoint, 'GET', authorization,index, profile); // Sử dụng makeApiRequest có sẵn
-        logMessage('success', `Đã lấy template thành công cho ${isMyTemplate ? 'My Template' : 'Image Template'}.`,index);
-        return templateData;
+        const templateData = await makeApiRequest(endpoint, 'GET', authorization, index, profile); // Sử dụng makeApiRequest có sẵn
+        if (templateData && templateData.url) {
+            const imageResponse = await axios.get(templateData.url, { responseType: 'arraybuffer' });
+            logMessage('success', `Đã tải ảnh template thành công cho ${isMyTemplate ? 'My Template' : 'Image Template'}.`, index);
+            return {
+                imageData: imageResponse.data,
+                id: templateData.id,
+                x: templateData.x,
+                y: templateData.y,
+                size: templateData.size
+            };
+        } else {
+            logMessage('error', `Không tìm thấy URL ảnh cho template ${isMyTemplate ? 'My Template' : 'Image Template'}.`, 'Account ' + index);
+            throw new Error(`Không tìm thấy URL ảnh cho template ${isMyTemplate ? 'My Template' : 'Image Template'}.`);
+        }
     } catch (error) {
         if (error.response && error.response.status === 401) {
             const newAuthorization = await getAuthorizationForProfile(profile.name);
             if (newAuthorization) {
-                return await fetchTemplate(newAuthorization,index, profile, isMyTemplate); // Thử lại với Authorization mới
+                return await fetchTemplate(newAuthorization, index, profile, isMyTemplate); // Thử lại với Authorization mới
             } else {
                 throw new Error(`Không thể lấy Authorization mới cho profile ${profile.name}.`);
             }
         } else {
-            logMessage('error', `Lỗi khi lấy template: ${error.message}`,'Account ' + index);
+            logMessage('error', `Lỗi khi lấy template: ${error.message}`, 'Account ' + index);
             throw error;
         }
     }
@@ -340,7 +352,7 @@ function rgbToHex(r, g, b) {
 }
 async function analyzeImage(imagePath) {
   try {
-      logMessage('info', `Bắt đầu ph��n tích ảnh: ${imagePath}`);
+      logMessage('info', `Bắt đầu phân tích ảnh: ${imagePath}`);
 
       const allowedColors = readAllowedColors();
       if (allowedColors.length === 0) {
@@ -375,7 +387,6 @@ async function analyzeImage(imagePath) {
 
       logMessage('info', `Tổng số pixel: ${colors.length}`);
       logMessage('info', `Số màu duy nhất (trong mau.txt): ${uniqueColors.size}`);
-      globalImageAnalysis = colors; // Luu lai gia tri phan tich
       return colors;
   } catch (error) {
       logMessage('error', `Lỗi khi đọc và phân tích ảnh: ${error.message}`);
@@ -486,31 +497,21 @@ async function attemptRepaint(pixelId, newColor,index, currentAuthorization) {
         return null;
     }
 }
-async function startRepaint(authorization, index, charges, profile) {
+async function startRepaint(authorization, index, charges, profile, imageColors, templateData) {
   let currentAuthorization = authorization || await getAuthorizationForProfile(profile.name);
   if (!currentAuthorization) {
-      logMessage('error', `Không tìm thấy Authorization cho ${profile.name}, dừng repaint.`,'Account ' + index);
+      logMessage('error', `Không tìm thấy Authorization cho ${profile.name}, dừng repaint.`, 'Account ' + index);
       return;
   }
-  const myTemplateData = await fetchTemplate(currentAuthorization, index, profile);
-  if (!myTemplateData) {
-      logMessage('error', 'Không thể lấy dữ liệu template để repaint.','Account ' + index);
-      return;
-  }
-  const { id, x, y, size } = myTemplateData;
-  logMessage('info', `Template info: ID=${id}, x=${x}, y=${y}, size=${size}`,'Account ' + index);
+  const { id, x, y, size } = templateData;
+  logMessage('info', `Template info: ID=${id}, x=${x}, y=${y}, size=${size}`, 'Account ' + index);
   const allowedColors = readColorsFromFile();
   if (allowedColors.length === 0) {
-      logMessage('error', 'Không có mã màu hợp lệ trong mau.txt.','Account ' + index);
-      return;
-  }
-  const imageColors = globalImageAnalysis; 
-  if (!imageColors) {
-      logMessage('error', 'Không thể phân tích ảnh.','Account ' + index);
+      logMessage('error', 'Không có mã màu hợp lệ trong mau.txt.', 'Account ' + index);
       return;
   }
   if (imageColors.length !== size * size) {
-      logMessage('error', `Kích thước ảnh không phù hợp. Cần ${size * size} pixels, nhưng ảnh có ${imageColors.length} pixels.`,index);
+      logMessage('error', `Kích thước ảnh không phù hợp. Cần ${size * size} pixels, nhưng ảnh có ${imageColors.length} pixels.`, index);
       return;
   }
   const allPixelIds = [];
@@ -531,10 +532,10 @@ async function startRepaint(authorization, index, charges, profile) {
       let pixelsToRepaint = unrepaintedPixels.slice(0, charges);
       pixelsToRepaint = shuffleArray(pixelsToRepaint);
 
-      logMessage('info', `Đang repaint ${pixelsToRepaint.length} pixels cho tài khoản ${index}.`,'Account ' + index);
+      logMessage('info', `Đang repaint ${pixelsToRepaint.length} pixels cho tài khoản ${index}.`, 'Account ' + index);
 
       for (const { pixelId, newColor } of pixelsToRepaint) {
-          const success = await attemptRepaint(pixelId, newColor,index, authorization);
+          const success = await attemptRepaint(pixelId, newColor, index, authorization);
           if (success) {
               charges--;
               if (charges <= 0) break;
@@ -544,11 +545,11 @@ async function startRepaint(authorization, index, charges, profile) {
       if (charges > 0) {
           const updatedStatus = await getMiningStatus(authorization, index, profile);
           charges = updatedStatus.charges;
-          logMessage('info', `Cập nhật số lượt tô màu còn lại: ${charges}`,'Account ' + index);
+          logMessage('info', `Cập nhật số lượt tô màu còn lại: ${charges}`, 'Account ' + index);
       }
   }
 
-  logMessage('info', `Hoàn thành repaint cho tài khoản ${index}.`,'Account ' + index);  
+  logMessage('info', `Hoàn thành repaint cho tài khoản ${index}.`, 'Account ' + index);  
 }
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -775,10 +776,6 @@ const askUserForUpgrade = () => {
     while (true) {
         resetRepaintedPixels();
         try {
-            if (!globalImageAnalysis) {
-                globalImageAnalysis = await analyzeImage('image.png');
-                logMessage('info', 'Đã hoàn thành phân tích ảnh ');
-            }
             const profiles = readProfiles();
 
             const processProfile = async (profile, index) => {
@@ -786,15 +783,29 @@ const askUserForUpgrade = () => {
                     const { userData, authorization } = await fetchUserData(await getAuthorizationForProfile(profile.name), index, profile);
                     if (userData) {
                         const userName = `${userData.lastName} ${userData.firstName}`;
-                        await watchAds(authorization, index, profile);
-                        await claimRewards(authorization, index, profile);
-                        await checkAndClaimTasks(authorization, index, profile);
-                        const miningStatus = await getMiningStatus(authorization, index, profile);
+                        
+                        // Fetch template and save with a unique name for each profile
+                        const myTemplateData = await fetchTemplate(authorization, index, profile);
+                        if (myTemplateData && myTemplateData.imageData) {
+                            const imagePath = `image_${profile.name}.png`; // Unique image path for each profile
+                            fs.writeFileSync(imagePath, myTemplateData.imageData);
 
-                        if (wantRepaint) {
-                            await startRepaint(authorization, index, miningStatus.charges, profile, globalImageAnalysis);
+                            // Analyze the image for the current profile
+                            const imageAnalysis = await analyzeImage(imagePath);
+                            logMessage('info', `Đã hoàn thành phân tích ảnh cho tài khoản ${index}`);
+
+                            await watchAds(authorization, index, profile);
+                            await claimRewards(authorization, index, profile);
+                            await checkAndClaimTasks(authorization, index, profile);
+                            const miningStatus = await getMiningStatus(authorization, index, profile);
+
+                            if (wantRepaint) {
+                                await startRepaint(authorization, index, miningStatus.charges, profile, imageAnalysis, myTemplateData);
+                            } else {
+                                logMessage('info', 'Người dùng đã chọn không thực hiện repaint.', 'Account ' + index);
+                            }
                         } else {
-                            logMessage('info', 'Người dùng đã chọn không thực hiện repaint.', 'Account ' + index);
+                            logMessage('error', `Không thể tải dữ liệu hình ảnh cho tài khoản ${index}.`, 'Account ' + index);
                         }
                     }
                 } catch (error) {
