@@ -1,0 +1,19 @@
+{
+    "channel:notcoin" : "channel?name=notcoin",
+    "channel:notpixel_channel":"channel?name=notpixel_channel",
+    "leagueBonusGold":"leagueBonusGold",
+    "leagueBonusSilver":"leagueBonusSilver",
+    "leagueBonusPlatinum": "leagueBonusPlatinum",
+    "paint20pixels":"paint20pixels",
+    "x:notcoin":"x?name=notcoin",
+    "x:notpixel":"x?name=notpixel",
+    "makePixelAvatar":"makePixelAvatar",
+    "pixelInNickname":"pixelInNickname",
+    "joinSquad":"joinSquad",
+    "pumpkin": "pumpkin",
+    "jettonTask": "jettonTask",
+    "frogApp": "frogApp",
+    "nerdGame": "nerdGame",
+    "nikolai": "nikolai"
+
+}

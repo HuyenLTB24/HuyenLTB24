@@ -10,7 +10,7 @@ import { Mutex } from 'async-mutex';
 import { fileURLToPath } from 'url';
 import pLimit from 'p-limit';
 
-let globalImageAnalysis = null;
+//let globalImageAnalysis = null;
 const parseAuthorization = (authorization) => {
     try {
       const userEncoded = authorization.split('user=')[1].split('&')[0];
@@ -65,7 +65,7 @@ function readProfiles() {
                 server: server && port ? `${server}:${port}` : null,
                 username: username || null,
                 password: password || null,
-                profilePath: path.join('C:\\GPM', profile.profile_path)
+                profilePath: path.join('D:\\ProfileD', profile.profile_path)
             };
         });
     } catch (error) {
@@ -329,8 +329,23 @@ async function fetchTemplate(authorization, index, profile, isMyTemplate = true)
                 size: templateData.size
             };
         } else {
-            logMessage('error', `Không tìm thấy URL ảnh cho template ${isMyTemplate ? 'My Template' : 'Image Template'}.`, 'Account ' + index);
-            throw new Error(`Không tìm thấy URL ảnh cho template ${isMyTemplate ? 'My Template' : 'Image Template'}.`);
+            // Thêm logic để thử lại với endpoint khác nếu không tìm thấy URL
+            logMessage('warning', `Không tìm thấy URL ảnh cho template ${isMyTemplate ? 'My Template' : 'Image Template'}. Thử lại với endpoint khác.`, 'Account ' + index);
+            const fallbackEndpoint = 'https://notpx.app/api/v1/tournament/template/638403324';
+            const fallbackTemplateData = await makeApiRequest(fallbackEndpoint, 'GET', authorization, index, profile);
+            if (fallbackTemplateData && fallbackTemplateData.url) {
+                const fallbackImageResponse = await axios.put(fallbackTemplateData.url, { responseType: 'arraybuffer' });
+                logMessage('success', `Đã tải ảnh template thành công từ endpoint dự phòng.`, index);
+                return {
+                    imageData: fallbackImageResponse.data,
+                    id: fallbackTemplateData.id,
+                    x: fallbackTemplateData.x,
+                    y: fallbackTemplateData.y,
+                    size: fallbackTemplateData.size
+                };
+            } else {
+                throw new Error(`Không tìm thấy URL ảnh cho template từ endpoint dự phòng.`);
+            }
         }
     } catch (error) {
         if (error.response && error.response.status === 401) {
