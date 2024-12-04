@@ -1,0 +1,24 @@
+2024-12-04 18:51:11,196 - ERROR - Không tìm thấy file data.txt
+2024-12-04 18:51:56,140 - INFO - Đã tìm thấy 1 token
+2024-12-04 18:51:56,141 - INFO - Đang xử lý token thứ 1
+2024-12-04 18:51:56,777 - ERROR - Lỗi khi gọi API user/me: 403 Client Error: Forbidden for url: https://api.notbitco.in/api/v1/user/me
+2024-12-04 18:51:56,778 - ERROR - Token 1 không hợp lệ
+2024-12-04 18:52:56,888 - INFO - Đã tìm thấy 1 token
+2024-12-04 18:52:56,889 - INFO - Đang xử lý token thứ 1
+2024-12-04 18:52:57,276 - INFO - Token 1 - Tên người dùng: teole89, Telegram ID: 1696738159
+2024-12-04 18:52:57,416 - INFO - Token 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 18:52:57,417 - INFO - Token 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 18:52:58,156 - INFO - Token 1 - Hoàn thành bước follow của task telegram-follow
+2024-12-04 18:52:59,157 - INFO - Token 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 18:52:59,842 - INFO - Token 1 - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 18:53:00,843 - INFO - Token 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 18:53:01,888 - INFO - Token 1 - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 18:53:02,890 - INFO - Token 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 18:53:02,890 - INFO - Token 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 18:53:02,891 - INFO - Token 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 18:53:02,891 - INFO - Token 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
