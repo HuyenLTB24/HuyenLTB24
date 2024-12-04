@@ -312,3 +312,94 @@ Stacktrace:
 2024-12-04 19:47:24,685 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
 2024-12-04 19:47:25,286 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
 2024-12-04 19:47:26,790 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:50:48,269 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:50:50,357 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:50:52,995 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:50:55,805 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:52:32,378 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:52:36,102 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: http://kifbwyhh:prg2ieo5a5zi@104.238.10.127:6073
+2024-12-04 19:52:39,073 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:52:41,482 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:54:40,244 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:54:44,701 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: http://kifbwyhh:prg2ieo5a5zi@147.185.250.58:6844
+2024-12-04 19:54:46,535 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:55:22,809 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:55:24,736 - [BITNOTCOIN] - ERROR - Lỗi không mong muốn: 'Response' object has no attribute 'data'
+2024-12-04 19:56:19,658 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:56:29,498 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: http://kifbwyhh:prg2ieo5a5zi@142.147.131.218:6118
+2024-12-04 19:56:43,209 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:57:09,812 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 191.96.254.158
+2024-12-04 19:57:18,752 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:57:23,552 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:58:00,652 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:58:03,940 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 31.58.19.62
+2024-12-04 19:58:05,785 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:58:08,093 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:59:31,292 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:59:34,330 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 31.58.21.103
+2024-12-04 19:59:36,170 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:59:38,778 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:59:58,490 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:59:59,491 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 2
+2024-12-04 20:00:00,492 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 3
+2024-12-04 20:00:01,493 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 4
+2024-12-04 20:00:01,555 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 104.239.6.71
+2024-12-04 20:00:02,494 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 5
+2024-12-04 20:00:04,580 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:00:04,718 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 31.58.30.148
+2024-12-04 20:00:05,888 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 204.44.108.33
+2024-12-04 20:00:07,160 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:00:07,401 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:00:07,675 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 145.223.44.38
+2024-12-04 20:00:08,736 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:00:09,666 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:00:10,383 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:00:12,155 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:00:12,881 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:00:21,548 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 191.96.202.96
+2024-12-04 20:00:28,018 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:00:31,511 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:25,148 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 20:01:25,148 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 2
+2024-12-04 20:01:25,148 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 3
+2024-12-04 20:01:25,149 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 4
+2024-12-04 20:01:25,149 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 5
+2024-12-04 20:01:27,761 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 181.41.218.180
+2024-12-04 20:01:29,962 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:31,748 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:32,125 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 92.113.1.69
+2024-12-04 20:01:32,868 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 166.88.235.24
+2024-12-04 20:01:33,753 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 6
+2024-12-04 20:01:34,472 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 191.96.202.62
+2024-12-04 20:01:35,481 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:35,925 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:36,363 - [BITNOTCOIN] - INFO - [Tài Khoản 6] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 181.41.218.162
+2024-12-04 20:01:38,094 - [BITNOTCOIN] - INFO - [Tài Khoản 6] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:38,844 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:39,246 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 142.147.131.61
+2024-12-04 20:01:40,101 - [BITNOTCOIN] - INFO - [Tài Khoản 6] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:40,846 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 7
+2024-12-04 20:01:41,613 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:42,103 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 8
+2024-12-04 20:01:42,297 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:42,978 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:43,616 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 9
+2024-12-04 20:01:45,395 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:46,016 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:47,397 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 10
+2024-12-04 20:01:48,019 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 11
+2024-12-04 20:01:52,347 - [BITNOTCOIN] - INFO - [Tài Khoản 8] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 67.227.14.81
+2024-12-04 20:01:54,486 - [BITNOTCOIN] - INFO - [Tài Khoản 10] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 31.58.26.143
+2024-12-04 20:01:55,230 - [BITNOTCOIN] - INFO - [Tài Khoản 8] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:56,042 - [BITNOTCOIN] - INFO - [Tài Khoản 9] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 172.245.7.11
+2024-12-04 20:01:56,634 - [BITNOTCOIN] - INFO - [Tài Khoản 10] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:58,090 - [BITNOTCOIN] - INFO - [Tài Khoản 8] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:01:58,414 - [BITNOTCOIN] - INFO - [Tài Khoản 9] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:01:59,344 - [BITNOTCOIN] - INFO - [Tài Khoản 10] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:02:01,029 - [BITNOTCOIN] - INFO - [Tài Khoản 11] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 173.239.219.142
+2024-12-04 20:02:01,127 - [BITNOTCOIN] - INFO - [Tài Khoản 9] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:02:03,637 - [BITNOTCOIN] - INFO - [Tài Khoản 7] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Proxy: 45.61.127.54
+2024-12-04 20:02:05,637 - [BITNOTCOIN] - INFO - [Tài Khoản 11] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:02:07,805 - [BITNOTCOIN] - INFO - [Tài Khoản 7] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 20:02:08,219 - [BITNOTCOIN] - INFO - [Tài Khoản 11] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 20:02:13,731 - [BITNOTCOIN] - INFO - [Tài Khoản 7] - Hoàn thành bước follow của task : Join notbitcoin english chat group

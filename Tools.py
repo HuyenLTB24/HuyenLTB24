@@ -9,9 +9,12 @@ from colorlog import ColoredFormatter
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from queue import Queue
 
 class NotBitcoinAPI:
-    def __init__(self, token: str):
+    def __init__(self, token: str, proxy: str = None):
         self.base_url = "https://api.notbitco.in/api/v1"
         self.session = requests.Session()
         self.session.headers.update({
@@ -30,6 +33,13 @@ class NotBitcoinAPI:
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": "\"Windows\"",
         }
+
+        # Cấu hình proxy nếu có
+        if proxy:
+            self.session.proxies.update({
+                "http": proxy,
+                "https": proxy,
+            })
 
     def _make_request(self, method: str, endpoint: str, headers: Dict[str, str] = None, data: str = None) -> Dict[str, Any]:
         """Thực hiện yêu cầu API và xử lý lỗi"""
@@ -116,16 +126,31 @@ class NotBitcoinAPI:
         }
         return self._make_request("POST", endpoint, headers, json.dumps(data))
 
-def process_token(token: str, index: int):
+def check_proxy(proxy: str) -> str:
+    """Kiểm tra tính hợp lệ của proxy và trả về địa chỉ IP"""
+    if not proxy:
+        return "Không có proxy được cung cấp."
+    try:
+        response = requests.get("http://api.ipify.org?format=json", proxies={"http": proxy, "https": proxy}, timeout=10)
+        if response.status_code == 200:
+            return response.json().get("ip", "Không lấy được địa chỉ IP")
+    except requests.RequestException as error:
+        return f"Lỗi với proxy {proxy}: {error}"
+    return "Proxy không hợp lệ"
+
+def process_token(token: str, index: int, proxy: str = None):
     """Xử lý một token cụ thể"""
     logging.info(f"Đang xử lý token thứ {index}")
-    api = NotBitcoinAPI(token.strip())
+    if proxy and not check_proxy(proxy):
+        logging.warning(f"Proxy không hợp lệ: {proxy}")
+        proxy = None
+    api = NotBitcoinAPI(token.strip(), proxy)
     
     try:
         # Lấy thông tin user
         user_info = api.get_user_info()
         if "error" not in user_info:
-            logging.info(f"[Tài Khoản {index}] - Tên người dùng: {user_info.get('user', {}).get('username', 'Không có thông tin')}, Telegram ID: {user_info.get('user', {}).get('telegramId', 'Không có thông tin')}, Tổng điểm: {user_info.get('user', {}).get('totalPoint', 'Không có thông tin')}")
+            logging.info(f"[Tài Khoản {index}] - Tên người dùng: {user_info.get('user', {}).get('username', 'Không có thông tin')}, Telegram ID: {user_info.get('user', {}).get('telegramId', 'Không có thông tin')}, Tổng điểm: {user_info.get('user', {}).get('totalPoint', 'Không có thông tin')}, Proxy: {check_proxy(proxy)}")
             
             # Rút thưởng
             if user_info.get('user', {}).get('turnDraw', 0) > 0:
@@ -192,11 +217,35 @@ def main():
         with open('data.txt', 'r', encoding='utf-8') as file:
             tokens = file.readlines()
         
-       
+        # Đọc file proxy.txt với encoding='utf-8'
+        try:
+            with open('proxy.txt', 'r', encoding='utf-8') as proxy_file:
+                proxies = proxy_file.readlines()
+                proxies = [proxy.strip() for proxy in proxies if proxy.strip()]
+        except FileNotFoundError:
+            proxies = []
+            logging.warning("Không tìm thấy file proxy.txt")
+        
+        # Tạo hàng đợi cho các token
+        token_queue = Queue()
         for index, token in enumerate(tokens, 1):
             if token.strip():
-                process_token(token, index)
+                proxy = random.choice(proxies) if proxies else None
+                token_queue.put((token, index, proxy))
+        
+        # Hàm xử lý token từ hàng đợi
+        def worker():
+            while not token_queue.empty():
+                token, index, proxy = token_queue.get()
+                process_token(token, index, proxy)
                 sleep(1)
+                token_queue.task_done()
+        
+        # Tạo ThreadPoolExecutor với 5 luồng
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = [executor.submit(worker) for _ in range(5)]
+            for future in as_completed(futures):
+                future.result()
                 
     except FileNotFoundError:
         logging.error("Không tìm thấy file data.txt")
