@@ -265,3 +265,50 @@ Stacktrace:
 2024-12-04 19:38:36,163 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
 2024-12-04 19:38:36,163 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
 2024-12-04 19:38:36,163 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:42:26,224 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:42:26,225 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:42:26,542 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:42:26,955 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:42:26,956 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:42:26,956 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:42:27,436 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:42:28,437 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:42:28,942 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:42:29,943 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:42:29,943 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:42:29,943 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:42:29,944 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:42:29,944 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:42:29,944 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:42:29,944 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:42:29,945 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:42:29,945 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:43:13,430 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:43:13,431 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:43:13,667 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:43:14,198 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:43:15,626 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:44:11,973 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:44:11,973 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:44:12,784 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:44:13,378 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:44:14,850 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:44:38,916 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:44:39,266 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:44:40,265 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:44:41,735 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:45:20,260 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:45:20,903 - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:45:21,505 - INFO - [[Tài Khoản 1]] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:45:22,913 - INFO - [[Tài Khoản 1]] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:45:43,363 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:45:43,692 - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:45:44,533 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:45:45,983 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-04 19:46:37,573 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:46:37,773 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:46:38,545 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:47:24,001 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-04 19:47:24,685 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:47:25,286 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-04 19:47:26,790 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
