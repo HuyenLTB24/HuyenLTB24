@@ -5,6 +5,10 @@ from time import sleep
 import sys
 import re
 import json
+from colorlog import ColoredFormatter
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 class NotBitcoinAPI:
     def __init__(self, token: str):
@@ -121,13 +125,13 @@ def process_token(token: str, index: int):
         # Lấy thông tin user
         user_info = api.get_user_info()
         if "error" not in user_info:
-            logging.info(f"Token {index} - Tên người dùng: {user_info.get('user', {}).get('username', 'Không có thông tin')}, Telegram ID: {user_info.get('user', {}).get('telegramId', 'Không có thông tin')}")
+            logging.info(f"Tài Khoản {index} - Tên người dùng: {user_info.get('user', {}).get('username', 'Không có thông tin')}, Telegram ID: {user_info.get('user', {}).get('telegramId', 'Không có thông tin')}, Tổng điểm: {user_info.get('user', {}).get('totalPoint', 'Không có thông tin')}")
             
             # Rút thưởng
             if user_info.get('user', {}).get('turnDraw', 0) > 0:
                 prizes = api.draw_prizes()
                 if "error" not in prizes:
-                    logging.info(f"Token {index} - Rút thưởng thành công")
+                    logging.info(f"Tài Khoản {index} - Rút thưởng thành công")
             
             # Lấy tasks và thực hiện
             tasks = api.get_tasks()
@@ -139,7 +143,7 @@ def process_token(token: str, index: int):
                     task_code = task.get('code', '')
                     steps = task.get('steps', [])
                     
-                    logging.info(f"Token {index} - Tên nhiệm vụ: {task.get('title', 'Không có thông tin')}, Mã: {task_code}, Số bước: {len(steps)}")
+                    logging.info(f"Tài Khoản {index} - Tên nhiệm vụ: {task.get('title', 'Không có thông tin')}, Mã: {task_code}, Số bước: {len(steps)}")
                     
                     # Sử dụng code từ mỗi step và kiểm tra done
                     for step in steps:
@@ -147,24 +151,40 @@ def process_token(token: str, index: int):
                             step_code = step.get('code', '')
                             result = api.execute_task(task_code, step_code, task_meta_token)
                             if "error" not in result:
-                                logging.info(f"Token {index} - Hoàn thành bước {step_code} của task {task_code}")
+                                logging.info(f"[Tài Khoản {index}] - Hoàn thành bước {step_code} của task {task_code}")
                             else:
-                                logging.error(f"Token {index} - Lỗi khi thực hiện bước {step_code} của task {task_code}: {result['error']}")
+                                logging.error(f"[Tài Khoản {index}] - Lỗi khi thực hiện bước {step_code} của task {task_code}: {result['error']}")
                             sleep(1)  # Đợi 1 giây giữa các bước
         else:
-            logging.error(f"Token {index} không hợp lệ")
+            logging.error(f"Tài Khoản {index} không hợp lệ")
             
     except Exception as e:
-        logging.error(f"Lỗi khi xử lý token {index}: {str(e)}")
+        logging.error(f"Lỗi khi xử lý Tài Khoản {index}: {str(e)}")
 
 def main():
-    # Cấu hình logging với encoding='utf-8'
+    # Cấu hình logging với encoding='utf-8' và thêm màu
+    formatter = ColoredFormatter(
+        "%(log_color)s%(asctime)s - %(levelname)s - %(message)s",
+        datefmt=None,
+        reset=True,
+        log_colors={
+            'DEBUG': 'cyan',
+            'INFO': 'green',
+            'WARNING': 'yellow',
+            'ERROR': 'red',
+            'CRITICAL': 'red,bg_white',
+        }
+    )
+    
+    handler = logging.StreamHandler()
+    handler.setFormatter(formatter)
+    
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler('notbitcoin.log', encoding='utf-8'),
-            logging.StreamHandler(sys.stdout)
+            handler
         ]
     )
     

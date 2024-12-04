@@ -22,3 +22,246 @@
 2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
 2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
 2024-12-04 18:53:02,892 - INFO - Token 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 18:57:35,470 - INFO - Đã tìm thấy 1 token
+2024-12-04 18:57:35,471 - INFO - Đang xử lý token thứ 1
+2024-12-04 18:57:36,062 - INFO - Token 1 - Tên người dùng: teole89, Telegram ID: 1696738159
+2024-12-04 18:57:36,193 - INFO - Token 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 18:57:36,195 - INFO - Token 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 18:57:37,207 - INFO - Token 1 - Hoàn thành bước follow của task telegram-follow
+2024-12-04 18:57:38,208 - INFO - Token 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 18:57:39,069 - INFO - Token 1 - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 18:57:40,071 - INFO - Token 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 18:57:40,576 - INFO - Token 1 - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 18:57:41,578 - INFO - Token 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 18:57:41,578 - INFO - Token 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 18:57:41,579 - INFO - Token 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 18:57:41,579 - INFO - Token 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 18:57:41,580 - INFO - Token 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 18:57:41,580 - INFO - Token 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 18:57:41,580 - INFO - Token 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 18:57:41,580 - INFO - Token 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 18:57:41,581 - INFO - Token 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 18:58:54,690 - INFO - Đã tìm thấy 1 token
+2024-12-04 18:58:54,691 - INFO - Đang xử lý token thứ 1
+2024-12-04 18:58:54,892 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159
+2024-12-04 18:58:54,997 - INFO - Token 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 18:58:54,998 - INFO - Token 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 18:58:54,998 - INFO - Token 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 18:58:55,700 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 18:58:56,702 - INFO - Token 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 18:58:57,146 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 18:58:58,147 - INFO - Token 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 18:58:58,147 - INFO - Token 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 18:58:58,148 - INFO - Token 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 18:58:58,148 - INFO - Token 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 18:58:58,148 - INFO - Token 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 18:58:58,149 - INFO - Token 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 18:58:58,149 - INFO - Token 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 18:58:58,149 - INFO - Token 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 18:58:58,150 - INFO - Token 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 18:59:32,630 - INFO - Đã tìm thấy 1 token
+2024-12-04 18:59:32,631 - INFO - Đang xử lý token thứ 1
+2024-12-04 18:59:32,870 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159
+2024-12-04 18:59:33,239 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 18:59:33,239 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 18:59:33,239 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 18:59:33,738 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 18:59:34,740 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 18:59:35,126 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 18:59:36,127 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 18:59:36,127 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 18:59:36,128 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 18:59:36,128 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 18:59:36,129 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 18:59:36,129 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 18:59:36,129 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 18:59:36,129 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 18:59:36,130 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:03:11,279 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:03:11,280 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:03:11,730 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Cấp độ: Không có thông tin, Loại: Không có thông tin
+2024-12-04 19:03:11,843 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:03:11,844 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:03:11,844 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:03:13,016 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:03:14,017 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:03:14,431 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:03:15,432 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:03:15,432 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:03:15,433 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:03:15,433 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:03:15,434 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:03:15,435 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:03:15,435 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:03:15,435 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:03:15,436 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:03:52,965 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:03:52,966 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:03:53,182 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Cấp độ: Không có thông tin, Loại: Không có thông tin, ID: 674feca7d4939bd7489c6951, Type: Không có thông tin, Created At: 2024-12-04T05:46:15.802Z, Level: Không có thông tin
+2024-12-04 19:03:53,273 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:03:53,274 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:03:53,274 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:03:53,675 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:03:54,677 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:03:55,978 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:07:33,499 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:07:33,500 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:07:34,137 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910, Cấp độ: Không có thông tin, Loại: Không có thông tin, ID: 674feca7d4939bd7489c6951, Type: Không có thông tin, Created At: 2024-12-04T05:46:15.802Z, Level: Không có thông tin
+2024-12-04 19:07:34,276 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:07:34,277 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:07:34,277 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:07:34,735 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:07:35,737 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:07:36,240 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:07:37,241 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:07:37,241 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:07:37,242 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:07:37,242 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:07:37,243 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:07:37,243 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:07:37,243 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:07:37,244 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:07:37,244 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:08:23,720 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:08:23,721 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:08:23,934 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:08:24,049 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:08:24,050 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:08:24,050 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:08:25,238 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:08:26,239 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:08:26,714 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:08:27,715 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:08:27,715 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:08:27,716 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:08:27,716 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:08:27,717 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:08:27,717 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:08:27,717 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:08:27,718 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:08:27,718 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:12:29,274 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:12:29,275 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:12:29,801 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:12:29,889 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:12:29,890 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:12:29,891 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:12:31,057 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:12:32,058 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:12:32,776 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:32:27,557 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:32:27,557 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:32:27,789 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:32:27,923 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:32:27,924 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:32:27,924 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:32:28,924 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:32:29,925 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:32:30,385 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:32:31,386 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:32:31,386 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:32:31,387 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:32:31,387 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:32:31,388 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:32:31,388 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:32:31,388 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:32:31,389 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:32:31,389 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:33:32,455 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:33:32,455 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:33:32,660 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:33:32,767 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:33:32,768 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:33:32,768 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:33:34,297 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:33:35,298 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:33:35,686 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:33:36,687 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:33:36,687 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:33:36,687 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:33:36,688 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:33:36,688 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:33:36,688 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:33:36,689 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:33:36,689 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:33:36,689 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:35:46,268 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:35:46,269 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:35:46,570 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:35:46,674 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:35:46,674 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:35:46,675 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:35:48,374 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:35:49,376 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:35:50,383 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:35:51,384 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:35:51,384 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:35:51,385 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:35:51,385 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:35:51,385 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:35:51,386 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:35:51,387 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:35:51,387 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:35:51,387 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:35:59,248 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/8f07edd606ef2881ae7bc87a3895af03
+2024-12-04 19:37:26,940 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:37:26,941 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:37:27,522 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:37:27,609 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:37:27,609 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:37:27,610 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:37:28,887 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:37:29,888 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:37:30,489 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:37:31,491 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:37:31,491 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:37:31,492 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:37:31,492 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:37:31,492 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:37:31,492 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:37:31,494 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:37:31,494 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:37:31,494 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
+2024-12-04 19:37:42,654 - ERROR - Tài Khoản 1 - Lỗi khi gửi tin nhắn Telegram: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='input-message-input is-empty scrollable scrollable-y no-scrollbar input-field-input-fake']"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF636AD6CF5+28821]
+	(No symbol) [0x00007FF636A43880]
+	(No symbol) [0x00007FF6368E578A]
+	(No symbol) [0x00007FF6369391BE]
+	(No symbol) [0x00007FF6369394AC]
+	(No symbol) [0x00007FF636982647]
+	(No symbol) [0x00007FF63695F33F]
+	(No symbol) [0x00007FF63697F412]
+	(No symbol) [0x00007FF63695F0A3]
+	(No symbol) [0x00007FF63692A778]
+	(No symbol) [0x00007FF63692B8E1]
+	GetHandleVerifier [0x00007FF636E0FCED+3408013]
+	GetHandleVerifier [0x00007FF636E2745F+3504127]
+	GetHandleVerifier [0x00007FF636E1B63D+3455453]
+	GetHandleVerifier [0x00007FF636B9BDFB+835995]
+	(No symbol) [0x00007FF636A4EB9F]
+	(No symbol) [0x00007FF636A4A854]
+	(No symbol) [0x00007FF636A4A9ED]
+	(No symbol) [0x00007FF636A3A1D9]
+	BaseThreadInitThunk [0x00007FFF7E957374+20]
+	RtlUserThreadStart [0x00007FFF8047CC91+33]
+
+2024-12-04 19:38:33,025 - INFO - Đã tìm thấy 1 token
+2024-12-04 19:38:33,025 - INFO - Đang xử lý token thứ 1
+2024-12-04 19:38:33,247 - INFO - Tài Khoản 1 - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 65910
+2024-12-04 19:38:33,355 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitcoin - New era for all investor, Mã: twitter, Số bước: 2
+2024-12-04 19:38:33,356 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Follow NotBitCoin News channel, Mã: telegram-follow, Số bước: 1
+2024-12-04 19:38:33,356 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Change telegram name, Mã: telegram-change-name, Số bước: 1
+2024-12-04 19:38:33,763 - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task telegram-change-name
+2024-12-04 19:38:34,764 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join notbitcoin english chat group, Mã: telegram-join-group, Số bước: 1
+2024-12-04 19:38:35,159 - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task telegram-join-group
+2024-12-04 19:38:36,160 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome NotBitCoin to Telegram's App Center (Official), Mã: twitter-in-telegram-app-official, Số bước: 2
+2024-12-04 19:38:36,160 - INFO - Tài Khoản 1 - Tên nhiệm vụ: NotBitCoin - whitepaper v2, Mã: twitter-whitepaper-v2, Số bước: 2
+2024-12-04 19:38:36,161 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Welcome new brand of notbitcoin, Mã: new-brand-notbitcoin, Số bước: 3
+2024-12-04 19:38:36,162 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Notbitcoin's development plan 📜 , Mã: notbitcoin-development-plan, Số bước: 3
+2024-12-04 19:38:36,162 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play BIT, Mã: partner-play-bit, Số bước: 1
+2024-12-04 19:38:36,163 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Play PAWS, Mã: partner-play-paws, Số bước: 1
+2024-12-04 19:38:36,163 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Join with partner - Skate Chain, Mã: partner-skate-chain, Số bước: 1
+2024-12-04 19:38:36,163 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Vote for NOTBITCOIN, Mã: vote-for-notbitcoin, Số bước: 2
+2024-12-04 19:38:36,163 - INFO - Tài Khoản 1 - Tên nhiệm vụ: Introduce Program "Make Videos and Earn $NBIT", Mã: make-video-nbit, Số bước: 2
