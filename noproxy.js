@@ -42,13 +42,21 @@ const colors = {
     error: '\x1b[31m',
     paint: '\x1b[35m'
 };
-function logMessage(type, message,index = '') {
+function logMessage(type, message, index = '') {
     const timestamp = new Date().toLocaleString('en-GB', { timeZone: 'Asia/Bangkok', hour12: false });
     const color = colors[type] || colors.reset;
+    const highlightColor = '\x1b[33m'; // Màu vàng cho chữ
     const coloredType = `${color}[${type.toUpperCase()}]${colors.reset}`;
+    
+    // Chỉ highlight số trong phần message
+    const highlightedMessage = message
+        .replace(/\${[^}]+}/g, match => `${highlightColor}${match}${colors.reset}`)
+        // Highlight số chỉ khi nó đứng sau các từ khóa cụ thể
+        .replace(/(?<=(Balance:|màu:|Reward:|points|Total:))\s*\d+(\.\d+)?\b/g, match => `${highlightColor}${match}${colors.reset}`);
+    
     const logText = index 
-        ? `[${timestamp}] - {@Notpixel} - ${coloredType} ${index} | ${message}`
-        : `[${timestamp}] - {@Notpixel} - ${coloredType} ${message}`;
+        ? `[${timestamp}] - {@Notpixel} - ${coloredType} ${index} | ${highlightedMessage}`
+        : `[${timestamp}] - {@Notpixel} - ${coloredType} ${highlightedMessage}`;
     console.log(logText);
 }
 function readProfiles() {
@@ -688,24 +696,24 @@ const watchAds = async (authorization, index, profile) => {
       const advData = advResponse.data;
 
       if (advData && advData.banner && advData.banner.bannerAssets) {
-        logMessage('info', `${userName} | A new advertisement has been found for viewing! | Title: ${advData.banner.bannerAssets[1].value} | Type: ${advData.bannerType}`, 'Account ' + index);
+        logMessage('info', ` A new advertisement has been found for viewing! | Title: ${advData.banner.bannerAssets[1].value} | Type: ${advData.bannerType}`, 'Account ' + index);
         
         const previousStatus = await getMiningStatus(authorization, index, profile);
         const previousBalance = previousStatus.userBalance;
         const renderUrl = advData.banner.trackings[0].value;
         await axios.get(renderUrl, { headers: _headers });
         let sleepTime = randomInt(1, 5);
-        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before next action.`, 'Account ' + index);
+        logMessage('info', ` Sleeping for ${sleepTime} seconds before next action.`, 'Account ' + index);
         await countdown(sleepTime);
         const showUrl = advData.banner.trackings[1].value;
         await axios.get(showUrl, { headers: _headers });
         sleepTime = randomInt(10, 15);
-        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before next action.`, 'Account ' + index);
+        logMessage('info', ` Sleeping for ${sleepTime} seconds before next action.`, 'Account ' + index);
         await countdown(sleepTime);
         const rewardUrl = advData.banner.trackings[4].value;
         await axios.get(rewardUrl, { headers: _headers });
         sleepTime = randomInt(1, 5);
-        logMessage('info', `${userName} | Sleeping for ${sleepTime} seconds before updating status.`, 'Account ' + index);
+        logMessage('info', ` Sleeping for ${sleepTime} seconds before updating status.`, 'Account ' + index);
         await countdown(sleepTime);
         await updateStatus(authorization, index, profile);
         const currentStatus = await getMiningStatus(authorization, index, profile);
@@ -741,15 +749,15 @@ const updateStatus = async (authorization, index, profile) => {
     } catch (error) {
       const retryDelay = baseDelay * (attempt + 1);
       if (error.response) {
-        logMessage('warning', `${userName} | Status update attempt ${attempt} failed | Sleep ${retryDelay / 1000} sec | ${error.response.status}, ${error.message}`, 'Account ' + index);
+        logMessage('warning', ` Status update attempt ${attempt} failed | Sleep ${retryDelay / 1000} sec | ${error.response.status}, ${error.message}`, 'Account ' + index);
       } else {
-        logMessage('error', `${userName} | Unexpected error when updating status | Sleep ${retryDelay / 1000} sec | ${error.message}`, 'Account ' + index);
+        logMessage('error', ` Unexpected error when updating status | Sleep ${retryDelay / 1000} sec | ${error.message}`, 'Account ' + index);
       }
       await sleep(retryDelay); 
     }
   }
 
-  throw new Error(`${userName} | Failed to update status after ${maxRetries} attempts`);
+  throw new Error(` Failed to update status after ${maxRetries} attempts`);
 };
 const countdown = (seconds) => {
     return new Promise((resolve) => {
@@ -797,36 +805,36 @@ const askUserForUpgrade = () => {
                 try {
                     const { userData, authorization } = await fetchUserData(await getAuthorizationForProfile(profile.name), index, profile);
                     if (userData) {
-                        const userName = `${userData.lastName} ${userData.firstName}`;
-                        
-                        // Fetch template and save with a unique name for each profile
-                        const myTemplateData = await fetchTemplate(authorization, index, profile);
-                        if (myTemplateData && myTemplateData.imageData) {
-                            const imagePath = `image_${profile.name}.png`; // Unique image path for each profile
-                            fs.writeFileSync(imagePath, myTemplateData.imageData);
+                        //const userName = `${userData.lastName} ${userData.firstName}`;
+                        await claimRewards(authorization, index, profile);
+                        await watchAds(authorization, index, profile);
+                        await checkAndClaimTasks(authorization, index, profile);
+                        const miningStatus = await getMiningStatus(authorization, index, profile);
 
-                            // Analyze the image for the current profile
-                            const imageAnalysis = await analyzeImage(imagePath);
-                            logMessage('info', `Đã hoàn thành phân tích ảnh cho tài khoản ${index}`);
+                        if (wantRepaint) {
+                            // Fetch template and save with a unique name for each profile
+                            const myTemplateData = await fetchTemplate(authorization, index, profile);
+                            if (myTemplateData && myTemplateData.imageData) {
+                                const imagePath = `image_${profile.name}.png`; // Unique image path for each profile
+                                fs.writeFileSync(imagePath, myTemplateData.imageData);
 
-                            await watchAds(authorization, index, profile);
-                            await claimRewards(authorization, index, profile);
-                            await checkAndClaimTasks(authorization, index, profile);
-                            const miningStatus = await getMiningStatus(authorization, index, profile);
+                                // Analyze the image for the current profile
+                                const imageAnalysis = await analyzeImage(imagePath);
+                                logMessage('info', `Đã hoàn thành phân tích ảnh cho tài khoản ${index}`);
 
-                            if (wantRepaint) {
                                 await startRepaint(authorization, index, miningStatus.charges, profile, imageAnalysis, myTemplateData);
                             } else {
-                                logMessage('info', 'Người dùng đã chọn không thực hiện repaint.', 'Account ' + index);
+                                logMessage('error', `Không thể tải dữ liệu hình ảnh cho tài khoản ${index}.`, 'Account ' + index);
                             }
                         } else {
-                            logMessage('error', `Không thể tải dữ liệu hình ảnh cho tài khoản ${index}.`, 'Account ' + index);
+                            logMessage('info', 'Người dùng đã chọn không thực hiện repaint.', 'Account ' + index);
                         }
                     }
                 } catch (error) {
                     logMessage('error', `Đã xảy ra lỗi với tài khoản ${index}: ${error.message}`);
                 }
             };
+    
             const tasks = profiles.map((profile, index) => limit(() => processProfile(profile, index)));
             await Promise.all(tasks);
 

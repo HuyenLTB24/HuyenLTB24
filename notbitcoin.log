@@ -403,3 +403,351 @@ Stacktrace:
 2024-12-04 20:02:07,805 - [BITNOTCOIN] - INFO - [Tài Khoản 7] - Hoàn thành bước change-name của task : Change telegram name
 2024-12-04 20:02:08,219 - [BITNOTCOIN] - INFO - [Tài Khoản 11] - Hoàn thành bước follow của task : Join notbitcoin english chat group
 2024-12-04 20:02:13,731 - [BITNOTCOIN] - INFO - [Tài Khoản 7] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:28:51,973 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-05 19:28:51,973 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 2
+2024-12-05 19:28:51,973 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 3
+2024-12-05 19:28:51,974 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 4
+2024-12-05 19:28:51,974 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 5
+2024-12-05 19:28:55,041 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: donglv67, Telegram ID: 6893080675, Tổng điểm: 0, Proxy: 31.58.21.103
+2024-12-05 19:28:55,472 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: hanguyen120492, Telegram ID: 7373535939, Tổng điểm: 0, Proxy: 104.239.6.216
+2024-12-05 19:28:56,413 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 56265, Proxy: 184.174.43.210
+2024-12-05 19:28:56,984 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Rút thưởng thành công
+2024-12-05 19:28:57,237 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Rút thưởng thành công
+2024-12-05 19:28:57,671 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: dungthu40, Telegram ID: 7232406263, Tổng điểm: 0, Proxy: 45.249.59.82
+2024-12-05 19:28:57,978 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Rút thưởng thành công
+2024-12-05 19:28:58,352 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Rút thưởng thành công
+2024-12-05 19:28:58,385 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : NotBitcoin - New era for all investor
+2024-12-05 19:28:59,255 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:28:59,578 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : NotBitcoin - New era for all investor
+2024-12-05 19:29:00,361 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước like của task : NotBitcoin - New era for all investor
+2024-12-05 19:29:00,863 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : NotBitcoin - New era for all investor
+2024-12-05 19:29:01,586 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước like của task : NotBitcoin - New era for all investor
+2024-12-05 19:29:01,806 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:29:02,752 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:29:03,076 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước like của task : NotBitcoin - New era for all investor
+2024-12-05 19:29:04,393 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:29:05,068 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:29:05,769 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:29:06,677 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:29:07,507 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:29:08,162 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:29:09,106 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:29:09,511 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước like của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:29:10,676 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:29:11,116 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước like của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:29:11,524 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-telegram-app của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:29:12,816 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước like của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:29:13,138 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-telegram-app của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:29:13,505 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước like của task : NotBitCoin - whitepaper v2
+2024-12-05 19:29:15,146 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước like của task : NotBitCoin - whitepaper v2
+2024-12-05 19:29:15,486 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-whitepaper của task : NotBitCoin - whitepaper v2
+2024-12-05 19:29:15,853 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-telegram-app của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:29:17,180 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-whitepaper của task : NotBitCoin - whitepaper v2
+2024-12-05 19:29:17,435 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước flow của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:17,990 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước like của task : NotBitCoin - whitepaper v2
+2024-12-05 19:29:19,187 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước flow của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:19,385 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước retweet của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:19,517 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: bacnguyen64, Telegram ID: 7509569283, Tổng điểm: 0, Proxy: 191.101.11.235
+2024-12-05 19:29:20,328 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-whitepaper của task : NotBitCoin - whitepaper v2
+2024-12-05 19:29:21,206 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước retweet của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:21,395 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước like của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:22,601 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước flow của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:23,261 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước like của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:23,437 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-1 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:25,197 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước retweet của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:25,493 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-1 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:25,583 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-2 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:27,531 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước like của task : Welcome new brand of notbitcoin
+2024-12-05 19:29:27,844 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-3 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:27,868 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-2 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:29,838 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-1 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:30,079 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-1 của task : Play BIT
+2024-12-05 19:29:30,112 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-3 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:32,122 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-2 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:32,229 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-1 của task : Play BIT
+2024-12-05 19:29:32,266 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-1 của task : Play PAWS
+2024-12-05 19:29:34,277 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-1 của task : Join with partner - Skate Chain
+2024-12-05 19:29:34,290 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-3 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:29:34,298 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-1 của task : Play PAWS
+2024-12-05 19:29:36,260 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-1 của task : Vote for NOTBITCOIN
+2024-12-05 19:29:36,341 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-1 của task : Join with partner - Skate Chain
+2024-12-05 19:29:36,420 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-1 của task : Play BIT
+2024-12-05 19:29:38,274 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-2 của task : Vote for NOTBITCOIN
+2024-12-05 19:29:38,399 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-1 của task : Vote for NOTBITCOIN
+2024-12-05 19:29:38,670 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-1 của task : Play PAWS
+2024-12-05 19:29:40,252 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-1 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:29:40,443 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-2 của task : Vote for NOTBITCOIN
+2024-12-05 19:29:41,003 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-1 của task : Join with partner - Skate Chain
+2024-12-05 19:29:42,260 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước visit-2 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:29:42,461 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-1 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:29:43,135 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-1 của task : Vote for NOTBITCOIN
+2024-12-05 19:29:44,548 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước visit-2 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:29:45,934 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-2 của task : Vote for NOTBITCOIN
+2024-12-05 19:29:48,210 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-1 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:29:50,426 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước visit-2 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:29:52,452 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Rút thưởng thành công
+2024-12-05 19:30:19,888 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-1 của task : Play BIT
+2024-12-05 19:31:05,033 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-1 của task : Play PAWS
+2024-12-05 19:31:21,599 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-1 của task : Join with partner - Skate Chain
+2024-12-05 19:31:24,330 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-1 của task : Vote for NOTBITCOIN
+2024-12-05 19:31:34,298 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-2 của task : Vote for NOTBITCOIN
+2024-12-05 19:31:38,328 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-1 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:31:42,583 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-2 của task : Introduce Program "Make Videos and Earn $NBIT"
+2024-12-05 19:31:54,289 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước like của task : NotBitcoin - New era for all investor
+2024-12-05 19:32:01,752 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:32:07,572 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:32:14,596 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:32:22,212 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước like của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:32:26,467 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-telegram-app của task : Welcome NotBitCoin to Telegram's App Center (Official)
+2024-12-05 19:32:36,178 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước like của task : NotBitCoin - whitepaper v2
+2024-12-05 19:32:39,776 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-whitepaper của task : NotBitCoin - whitepaper v2
+2024-12-05 19:32:42,765 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước flow của task : Welcome new brand of notbitcoin
+2024-12-05 19:32:46,745 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước retweet của task : Welcome new brand of notbitcoin
+2024-12-05 19:32:56,871 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước like của task : Welcome new brand of notbitcoin
+2024-12-05 19:33:01,516 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-1 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:33:04,384 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-2 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:33:08,657 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước visit-3 của task : Notbitcoin's development plan 📜 
+2024-12-05 19:34:37,460 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-05 19:34:37,461 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 2
+2024-12-05 19:34:37,462 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 3
+2024-12-05 19:34:37,462 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 4
+2024-12-05 19:34:37,463 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 5
+2024-12-05 19:34:40,759 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: bacnguyen64, Telegram ID: 7509569283, Tổng điểm: 71055, Proxy: 172.245.7.11
+2024-12-05 19:34:40,779 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: donglv67, Telegram ID: 6893080675, Tổng điểm: 55865, Proxy: 31.58.26.168
+2024-12-05 19:34:40,881 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: dungthu40, Telegram ID: 7232406263, Tổng điểm: 56440, Proxy: 216.74.115.88
+2024-12-05 19:34:42,291 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:34:42,410 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:34:43,025 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: hanguyen120492, Telegram ID: 7373535939, Tổng điểm: 55850, Proxy: 104.238.10.127
+2024-12-05 19:34:44,440 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:34:44,622 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:34:44,652 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:34:45,848 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-05 19:34:46,566 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:34:46,876 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:34:48,192 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:34:49,064 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:34:51,098 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:34:53,858 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-05 19:35:32,700 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 56785.5, Proxy: 191.101.11.235
+2024-12-05 19:35:41,781 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-05 19:35:58,215 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:25:55,228 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-08 07:25:55,228 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 2
+2024-12-08 07:25:55,228 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 3
+2024-12-08 07:25:55,229 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 4
+2024-12-08 07:25:55,230 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 5
+2024-12-08 07:25:57,793 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: dungthu40, Telegram ID: 7232406263, Tổng điểm: 56440, Proxy: 92.113.241.190
+2024-12-08 07:25:58,420 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: hanguyen120492, Telegram ID: 7373535939, Tổng điểm: 55850, Proxy: 184.174.43.210
+2024-12-08 07:25:58,440 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Rút thưởng thành công
+2024-12-08 07:25:58,810 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: teole89, Telegram ID: 1696738159, Tổng điểm: 57573, Proxy: 31.57.85.184
+2024-12-08 07:25:59,444 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Rút thưởng thành công
+2024-12-08 07:25:59,629 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Rút thưởng thành công
+2024-12-08 07:25:59,686 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:26:02,209 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:26:02,730 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:26:02,784 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:26:04,631 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:26:04,789 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:26:05,176 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:26:05,227 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: donglv67, Telegram ID: 6893080675, Tổng điểm: 55865, Proxy: 198.23.239.41
+2024-12-08 07:26:05,235 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: bacnguyen64, Telegram ID: 7509569283, Tổng điểm: 71055, Proxy: 198.23.239.30
+2024-12-08 07:26:06,120 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Rút thưởng thành công
+2024-12-08 07:26:06,765 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Rút thưởng thành công
+2024-12-08 07:26:07,122 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:26:10,264 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:26:15,474 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:26:16,064 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:26:18,870 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:26:20,704 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:26:24,217 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:29:00,696 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 1
+2024-12-08 07:29:00,697 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 2
+2024-12-08 07:29:00,697 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 3
+2024-12-08 07:29:00,698 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 4
+2024-12-08 07:29:00,698 - [BITNOTCOIN] - INFO - Đang xử lý token thứ 5
+2024-12-08 07:29:02,875 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: [36mbacnguyen64[0m, Telegram ID: [33m7509569283[0m, Tổng điểm: [32m72495[0m, Proxy: [35m92.113.231.116[0m
+2024-12-08 07:29:02,876 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: [36mdungthu40[0m, Telegram ID: [33m7232406263[0m, Tổng điểm: [32m57615[0m, Proxy: [35m92.113.246.49[0m
+2024-12-08 07:29:03,885 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: [36mteole89[0m, Telegram ID: [33m1696738159[0m, Tổng điểm: [32m58599.5[0m, Proxy: [35m206.206.118.51[0m
+2024-12-08 07:29:03,987 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: [36mdonglv67[0m, Telegram ID: [33m6893080675[0m, Tổng điểm: [32m56885[0m, Proxy: [35m216.74.114.105[0m
+2024-12-08 07:29:04,284 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:29:04,291 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:29:04,617 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: [36mhanguyen120492[0m, Telegram ID: [33m7373535939[0m, Tổng điểm: [32m57265[0m, Proxy: [35m142.147.242.115[0m
+2024-12-08 07:29:05,676 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:29:05,789 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:29:06,142 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:29:06,169 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:29:06,867 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Follow NotBitCoin News channel
+2024-12-08 07:29:07,965 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:29:08,010 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:29:08,117 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:29:08,228 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:29:09,501 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước change-name của task : Change telegram name
+2024-12-08 07:29:10,595 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:29:12,136 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước follow của task : Join notbitcoin english chat group
+2024-12-08 07:30:35,120 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 1[0m
+2024-12-08 07:30:35,121 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 2[0m
+2024-12-08 07:30:35,122 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 3[0m
+2024-12-08 07:30:35,122 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 4[0m
+2024-12-08 07:30:35,123 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 5[0m
+2024-12-08 07:30:37,792 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: [36mbacnguyen64[0m, Telegram ID: [33m7509569283[0m, Tổng điểm: [32m72495[0m, Proxy: [35m31.58.26.143[0m
+2024-12-08 07:30:37,984 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: [36mdonglv67[0m, Telegram ID: [33m6893080675[0m, Tổng điểm: [32m56885[0m, Proxy: [35m216.45.62.144[0m
+2024-12-08 07:30:38,173 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: [36mteole89[0m, Telegram ID: [33m1696738159[0m, Tổng điểm: [32m58599.5[0m, Proxy: [35m145.223.54.109[0m
+2024-12-08 07:30:38,286 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: [36mdungthu40[0m, Telegram ID: [33m7232406263[0m, Tổng điểm: [32m57615[0m, Proxy: [35m204.44.92.253[0m
+2024-12-08 07:30:39,633 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:30:39,973 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:30:40,109 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:30:40,160 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:30:41,971 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:30:42,303 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:30:42,415 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:30:42,960 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:30:44,352 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:30:44,743 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:30:45,321 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:30:48,747 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: [36mhanguyen120492[0m, Telegram ID: [33m7373535939[0m, Tổng điểm: [32m57265[0m, Proxy: [35m38.154.233.48[0m
+2024-12-08 07:30:50,880 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:30:53,479 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:30:55,987 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:31:35,707 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 1[0m
+2024-12-08 07:31:35,708 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 2[0m
+2024-12-08 07:31:35,709 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 3[0m
+2024-12-08 07:31:35,709 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 4[0m
+2024-12-08 07:31:35,710 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 5[0m
+2024-12-08 07:31:38,444 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 3][0m - [34mTên người dùng:[0m [33mbacnguyen64[0m, [34mTelegram ID:[0m [35m7509569283[0m, [34mTổng điểm:[0m [32m72495[0m, [34mProxy:[0m [36m166.88.235.46[0m
+2024-12-08 07:31:38,501 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 5][0m - [34mTên người dùng:[0m [33mhanguyen120492[0m, [34mTelegram ID:[0m [35m7373535939[0m, [34mTổng điểm:[0m [32m57265[0m, [34mProxy:[0m [36m31.58.26.168[0m
+2024-12-08 07:31:38,662 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 4][0m - [34mTên người dùng:[0m [33mdungthu40[0m, [34mTelegram ID:[0m [35m7232406263[0m, [34mTổng điểm:[0m [32m57615[0m, [34mProxy:[0m [36m104.143.250.72[0m
+2024-12-08 07:31:38,728 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 2][0m - [34mTên người dùng:[0m [33mdonglv67[0m, [34mTelegram ID:[0m [35m6893080675[0m, [34mTổng điểm:[0m [32m56885[0m, [34mProxy:[0m [36m31.58.30.148[0m
+2024-12-08 07:31:40,051 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 3][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:31:40,141 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 5][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:31:40,170 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 1][0m - [34mTên người dùng:[0m [33mteole89[0m, [34mTelegram ID:[0m [35m1696738159[0m, [34mTổng điểm:[0m [32m58599.5[0m, [34mProxy:[0m [36m104.232.209.29[0m
+2024-12-08 07:31:40,380 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 4][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:31:40,564 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 2][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:31:42,057 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 1][0m - [32mHoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:31:42,243 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 3][0m - [32mHoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:31:42,364 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 5][0m - [32mHoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:31:42,663 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 4][0m - [32mHoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:31:42,920 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 2][0m - [32mHoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:31:44,432 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 3][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:31:44,459 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 1][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:31:44,590 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 5][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:31:44,945 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 4][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:31:45,257 - [BITNOTCOIN] - INFO - [36m[Tài Khoản 2][0m - [32mHoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:34:50,626 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 1[0m
+2024-12-08 07:34:50,626 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 2[0m
+2024-12-08 07:34:50,626 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 3[0m
+2024-12-08 07:34:50,627 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 4[0m
+2024-12-08 07:34:50,627 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 5[0m
+2024-12-08 07:34:52,616 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: [36mdungthu40[0m, Telegram ID: [33m7232406263[0m, Tổng điểm: [32m57615[0m, Proxy: [35m92.113.246.49[0m
+2024-12-08 07:34:52,687 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: [36mhanguyen120492[0m, Telegram ID: [33m7373535939[0m, Tổng điểm: [32m57265[0m, Proxy: [35m92.113.241.6[0m
+2024-12-08 07:34:53,672 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:34:53,747 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: [36mteole89[0m, Telegram ID: [33m1696738159[0m, Tổng điểm: [32m58599.5[0m, Proxy: [35m184.174.43.210[0m
+2024-12-08 07:34:53,797 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:34:53,883 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: [36mdonglv67[0m, Telegram ID: [33m6893080675[0m, Tổng điểm: [32m56885[0m, Proxy: [35m216.45.62.134[0m
+2024-12-08 07:34:54,758 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: [36mbacnguyen64[0m, Telegram ID: [33m7509569283[0m, Tổng điểm: [32m72495[0m, Proxy: [35m204.44.120.67[0m
+2024-12-08 07:34:55,470 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:34:55,554 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:34:55,601 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:34:55,675 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:34:56,449 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:34:57,253 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:34:57,419 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:34:57,994 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:34:58,700 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:34:58,718 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:34:59,255 - [BITNOTCOIN] - INFO - [32mĐã dừng chương trình thành công![0m
+2024-12-08 07:35:00,332 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:35:02,128 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:35:58,609 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 1[0m
+2024-12-08 07:35:58,609 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 2[0m
+2024-12-08 07:35:58,609 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 3[0m
+2024-12-08 07:35:58,610 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 4[0m
+2024-12-08 07:35:58,610 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 5[0m
+2024-12-08 07:36:00,626 - [BITNOTCOIN] - INFO - [33mĐang hủy các task đang chạy...[0m
+2024-12-08 07:36:01,352 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tên người dùng: [36mteole89[0m, Telegram ID: [33m1696738159[0m, Tổng điểm: [32m58599.5[0m, Proxy: [35m166.88.58.99[0m
+2024-12-08 07:36:01,551 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tên người dùng: [36mdungthu40[0m, Telegram ID: [33m7232406263[0m, Tổng điểm: [32m57615[0m, Proxy: [35m216.45.62.134[0m
+2024-12-08 07:36:02,240 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tên người dùng: [36mhanguyen120492[0m, Telegram ID: [33m7373535939[0m, Tổng điểm: [32m57265[0m, Proxy: [35m216.74.118.218[0m
+2024-12-08 07:36:03,630 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:36:03,631 - [BITNOTCOIN] - INFO - [32mĐã dừng chương trình thành công![0m
+2024-12-08 07:36:04,369 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:36:04,529 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tên người dùng: [36mdonglv67[0m, Telegram ID: [33m6893080675[0m, Tổng điểm: [32m56885[0m, Proxy: [35m45.56.173.233[0m
+2024-12-08 07:36:05,377 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:36:05,868 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:36:06,731 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:36:07,723 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:36:08,173 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:36:09,098 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:36:10,032 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:36:11,215 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:36:14,777 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:36:26,266 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tên người dùng: [36mbacnguyen64[0m, Telegram ID: [33m7509569283[0m, Tổng điểm: [32m72495[0m, Proxy: [35m191.96.202.62[0m
+2024-12-08 07:36:31,556 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:36:35,087 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:36:39,521 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:37:08,583 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 1[0m
+2024-12-08 07:37:08,584 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 2[0m
+2024-12-08 07:37:08,584 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 3[0m
+2024-12-08 07:37:08,585 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 4[0m
+2024-12-08 07:37:08,585 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 5[0m
+2024-12-08 07:37:10,230 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - T��n người dùng: [36mdungthu40[0m, Telegram ID: [33m7232406263[0m, Tổng điểm: [32m57615[0m, Proxy: [35m92.113.246.49[0m
+2024-12-08 07:37:10,601 - [BITNOTCOIN] - INFO - [33mĐang hủy các task đang chạy...[0m
+2024-12-08 07:37:10,907 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - T��n người dùng: [36mbacnguyen64[0m, Telegram ID: [33m7509569283[0m, Tổng điểm: [32m72495[0m, Proxy: [35m181.41.218.162[0m
+2024-12-08 07:37:11,360 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:37:11,452 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - T��n người dùng: [36mhanguyen120492[0m, Telegram ID: [33m7373535939[0m, Tổng điểm: [32m57265[0m, Proxy: [35m104.239.6.71[0m
+2024-12-08 07:37:11,655 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - T��n người dùng: [36mdonglv67[0m, Telegram ID: [33m6893080675[0m, Tổng điểm: [32m56885[0m, Proxy: [35m207.244.218.16[0m
+2024-12-08 07:37:11,950 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:37:12,714 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - T��n người dùng: [36mteole89[0m, Telegram ID: [33m1696738159[0m, Tổng điểm: [32m58599.5[0m, Proxy: [35m206.206.118.51[0m
+2024-12-08 07:37:13,081 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:37:13,189 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:37:13,344 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:37:13,612 - [BITNOTCOIN] - INFO - [32mĐã dừng chương trình thành công![0m
+2024-12-08 07:37:13,767 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:37:14,856 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:37:15,022 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:37:15,313 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:37:15,586 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:37:15,635 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:37:17,192 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:37:17,516 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:37:17,829 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:13,624 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 1[0m
+2024-12-08 07:38:13,624 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 2[0m
+2024-12-08 07:38:13,624 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 3[0m
+2024-12-08 07:38:13,625 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 4[0m
+2024-12-08 07:38:13,626 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 5[0m
+2024-12-08 07:38:16,443 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tn người dùng: [36mdungthu40[0m, Telegram ID: [33m7232406263[0m, Tổng điểm: [32m57615[0m, Proxy: [35m31.58.16.49[0m
+2024-12-08 07:38:16,467 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Tn người dùng: [36mdonglv67[0m, Telegram ID: [33m6893080675[0m, Tổng điểm: [32m56885[0m, Proxy: [35m166.88.235.24[0m
+2024-12-08 07:38:16,485 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tn người dùng: [36mhanguyen120492[0m, Telegram ID: [33m7373535939[0m, Tổng điểm: [32m57265[0m, Proxy: [35m31.59.18.74[0m
+2024-12-08 07:38:16,521 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tn người dùng: [36mbacnguyen64[0m, Telegram ID: [33m7509569283[0m, Tổng điểm: [32m72495[0m, Proxy: [35m147.185.217.128[0m
+2024-12-08 07:38:17,994 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:38:18,124 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:38:18,124 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:38:18,568 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tn người dùng: [36mteole89[0m, Telegram ID: [33m1696738159[0m, Tổng điểm: [32m58599.5[0m, Proxy: [35m216.45.62.144[0m
+2024-12-08 07:38:18,653 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:38:20,152 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:20,327 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:20,333 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:20,845 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:21,640 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:22,330 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:22,554 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:22,588 - [BITNOTCOIN] - INFO - [Tài Khoản 2] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:23,037 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:26,407 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 1[0m
+2024-12-08 07:38:26,408 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 2[0m
+2024-12-08 07:38:26,408 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 3[0m
+2024-12-08 07:38:26,408 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 4[0m
+2024-12-08 07:38:26,409 - [BITNOTCOIN] - INFO - [34mĐang xử lý token thứ 5[0m
+2024-12-08 07:38:28,435 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Tn người dùng: [36mbacnguyen64[0m, Telegram ID: [33m7509569283[0m, Tổng điểm: [32m72495[0m, Proxy: [35m92.113.231.116[0m
+2024-12-08 07:38:29,139 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Tn người dùng: [36mdungthu40[0m, Telegram ID: [33m7232406263[0m, Tổng điểm: [32m57615[0m, Proxy: [35m31.58.21.103[0m
+2024-12-08 07:38:29,148 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Tn người dùng: [36mhanguyen120492[0m, Telegram ID: [33m7373535939[0m, Tổng điểm: [32m57265[0m, Proxy: [35m104.168.25.106[0m
+2024-12-08 07:38:29,547 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:38:30,709 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:38:30,737 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mFollow NotBitCoin News channel[0m
+2024-12-08 07:38:31,383 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:32,858 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:32,963 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m
+2024-12-08 07:38:33,216 - [BITNOTCOIN] - INFO - [Tài Khoản 3] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:33,627 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Tn người dùng: [36mteole89[0m, Telegram ID: [33m1696738159[0m, Tổng điểm: [32m58599.5[0m, Proxy: [35m198.23.239.41[0m
+2024-12-08 07:38:35,022 - [BITNOTCOIN] - INFO - [Tài Khoản 5] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:35,200 - [BITNOTCOIN] - INFO - [Tài Khoản 4] - Hoàn thành bước [36mfollow[0m của task: [33mJoin notbitcoin english chat group[0m
+2024-12-08 07:38:35,781 - [BITNOTCOIN] - INFO - [Tài Khoản 1] - Hoàn thành bước [36mchange-name[0m của task: [33mChange telegram name[0m

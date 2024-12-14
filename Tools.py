@@ -6,15 +6,32 @@ import sys
 import re
 import json
 from colorlog import ColoredFormatter
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 import random
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 from queue import Queue
+from colorama import Fore, Back, Style
+import colorama
+import signal
+import os
+
+# Thêm biến global để kiểm soát việc dừng
+should_exit = False
+
+# Khai báo global queue ở mức module
+token_queue = Queue()
+
+def signal_handler(signum, frame):
+    """Xử lý khi người dùng nhấn Ctrl+C"""
+    global should_exit
+    print(f"\n{Fore.YELLOW}Đang dừng chương trình...{Style.RESET_ALL}")
+    should_exit = True
+    # Thoát ngay lập tức
+    os._exit(0)
 
 class NotBitcoinAPI:
     def __init__(self, token: str, proxy: str = None):
+        # Khởi tạo colorama
+        colorama.init()
         self.base_url = "https://api.notbitco.in/api/v1"
         self.session = requests.Session()
         self.session.headers.update({
@@ -140,9 +157,12 @@ def check_proxy(proxy: str) -> str:
 
 def process_token(token: str, index: int, proxy: str = None):
     """Xử lý một token cụ thể"""
-    logging.info(f"Đang xử lý token thứ {index}")
+    global should_exit
+    if should_exit:
+        return
+    logging.info(f"{Fore.BLUE}Đang xử lý token thứ {index}{Style.RESET_ALL}")
     if proxy and not check_proxy(proxy):
-        logging.warning(f"Proxy không hợp lệ: {proxy}")
+        logging.warning(f"{Fore.RED}Proxy không hợp lệ: {proxy}{Style.RESET_ALL}")
         proxy = None
     api = NotBitcoinAPI(token.strip(), proxy)
     
@@ -150,13 +170,19 @@ def process_token(token: str, index: int, proxy: str = None):
         # Lấy thông tin user
         user_info = api.get_user_info()
         if "error" not in user_info:
-            logging.info(f"[Tài Khoản {index}] - Tên người dùng: {user_info.get('user', {}).get('username', 'Không có thông tin')}, Telegram ID: {user_info.get('user', {}).get('telegramId', 'Không có thông tin')}, Tổng điểm: {user_info.get('user', {}).get('totalPoint', 'Không có thông tin')}, Proxy: {check_proxy(proxy)}")
+            logging.info(
+                f"[Tài Khoản {index}] - "
+                f"Tn người dùng: {Fore.CYAN}{user_info.get('user', {}).get('username', 'Không có thông tin')}{Style.RESET_ALL}, "
+                f"Telegram ID: {Fore.YELLOW}{user_info.get('user', {}).get('telegramId', 'Không có thông tin')}{Style.RESET_ALL}, "
+                f"Tổng điểm: {Fore.GREEN}{user_info.get('user', {}).get('totalPoint', 'Không có thông tin')}{Style.RESET_ALL}, "
+                f"Proxy: {Fore.MAGENTA}{check_proxy(proxy)}{Style.RESET_ALL}"
+            )
             
             # Rút thưởng
             if user_info.get('user', {}).get('turnDraw', 0) > 0:
                 prizes = api.draw_prizes()
                 if "error" not in prizes:
-                    logging.info(f"[Tài Khoản {index}] - Rút thưởng thành công")
+                    logging.info(f"[Tài Khoản {index}] - {Fore.GREEN}Rút thưởng thành công{Style.RESET_ALL}")
             
             # Lấy tasks và thực hiện
             tasks = api.get_tasks()
@@ -175,17 +201,41 @@ def process_token(token: str, index: int, proxy: str = None):
                             step_code = step.get('code', '')
                             result = api.execute_task(task_code, step_code, task_meta_token)
                             if "error" not in result:
-                                logging.info(f"[Tài Khoản {index}] - Hoàn thành bước {step_code} của task : {task.get('title', 'Không có thông tin')}")
+                                logging.info(
+                                    f"[Tài Khoản {index}] - "
+                                    f"Hoàn thành bước {Fore.CYAN}{step_code}{Style.RESET_ALL} của task: "
+                                    f"{Fore.YELLOW}{task.get('title', 'Không có thông tin')}{Style.RESET_ALL}"
+                                )
                             else:
-                                logging.error(f"[Tài Khoản {index}] - Lỗi khi thực hiện bước {step_code} của task {task_code}: {result['error']}")
-                            sleep(1)  # Đợi 1 giây giữa các bước
+                                logging.error(
+                                    f"[Tài Khoản {index}] - "
+                                    f"{Fore.RED}Lỗi khi thực hiện bước {step_code} của task {task_code}: "
+                                    f"{result['error']}{Style.RESET_ALL}"
+                                )
+                            sleep(1)
         else:
             logging.error(f"[Tài Khoản {index}] không hợp lệ")
             
     except Exception as e:
-        logging.error(f"Lỗi khi xử lý [Tài Khoản {index}]: {str(e)}")
+        logging.error(f"{Fore.RED}Lỗi khi xử lý [Tài Khoản {index}]: {str(e)}{Style.RESET_ALL}")
+
+def worker():
+    """Worker function cho thread pool"""
+    try:
+        while not token_queue.empty() and not should_exit:
+            try:
+                token, index, proxy = token_queue.get(timeout=1)
+                process_token(token, index, proxy)
+                token_queue.task_done()
+            except Exception:
+                break
+    except KeyboardInterrupt:
+        return
 
 def main():
+    # Đăng ký signal handler
+    signal.signal(signal.SIGINT, signal_handler)
+    
     # Cấu hình logging với encoding='utf-8' và thêm màu
     formatter = ColoredFormatter(
         "%(log_color)s%(asctime)s - [BITNOTCOIN] - %(levelname)s - %(message)s",
@@ -224,33 +274,34 @@ def main():
                 proxies = [proxy.strip() for proxy in proxies if proxy.strip()]
         except FileNotFoundError:
             proxies = []
-            logging.warning("Không tìm thấy file proxy.txt")
+            logging.warning(f"{Fore.YELLOW}Không tìm thấy file proxy.txt{Style.RESET_ALL}")
         
         # Tạo hàng đợi cho các token
-        token_queue = Queue()
         for index, token in enumerate(tokens, 1):
             if token.strip():
                 proxy = random.choice(proxies) if proxies else None
                 token_queue.put((token, index, proxy))
         
-        # Hàm xử lý token từ hàng đợi
-        def worker():
-            while not token_queue.empty():
-                token, index, proxy = token_queue.get()
-                process_token(token, index, proxy)
-                sleep(1)
-                token_queue.task_done()
-        
         # Tạo ThreadPoolExecutor với 5 luồng
         with ThreadPoolExecutor(max_workers=5) as executor:
-            futures = [executor.submit(worker) for _ in range(5)]
-            for future in as_completed(futures):
-                future.result()
+            futures = []
+            try:
+                for _ in range(5):
+                    if should_exit:
+                        break
+                    futures.append(executor.submit(worker))
                 
-    except FileNotFoundError:
-        logging.error("Không tìm thấy file data.txt")
+                # Đợi với timeout ngắn
+                wait(futures, timeout=0.1, return_when=FIRST_COMPLETED)
+                
+            except KeyboardInterrupt:
+                # Thoát ngay khi nhận Ctrl+C
+                print(f"\n{Fore.YELLOW}Dừng ngay lập tức!{Style.RESET_ALL}")
+                os._exit(0)
+                
     except Exception as e:
-        logging.error(f"Lỗi không mong muốn: {str(e)}")
+        logging.error(f"{Fore.RED}Lỗi: {str(e)}{Style.RESET_ALL}")
+        os._exit(1)
 
 if __name__ == "__main__":
     main()
